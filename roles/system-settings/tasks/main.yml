@@ -1,5 +1,5 @@
 ---
-    - name: Menu Bar: Customise icons show
+    - name: "Menu Bar: Customise icons show"
       osx_defaults:
         domain: com.apple.systemuiserver
         key: menuExtras
@@ -12,7 +12,7 @@
           - "/System/Library/CoreServices/Menu Extras/AirPort.menu"
         state: present
         
-    - name: Menu Bar: Show Battery Percent
+    - name: "Menu Bar: Show Battery Percent"
       osx_defaults:
         domain: com.apple.menuextra.battery
         key: ShowPercent
@@ -28,7 +28,7 @@
         value: 1
         state: present
    
-    - name: Dock: Set the icon size to 45 pixels
+    - name: "Dock: Set the icon size to 45 pixels"
       osx_defaults:
         domain: com.apple.dock
         key: tilesize
