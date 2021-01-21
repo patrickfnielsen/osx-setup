@@ -45,3 +45,8 @@
       homebrew_cask: 
         name: "dotnet-sdk"
         state: present
+
+    - name: Install rectangle
+      homebrew_cask: 
+        name: "rectangle"
+        state: present
