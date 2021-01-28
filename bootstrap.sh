@@ -3,18 +3,18 @@
 echo "*** Starting device bootstrap ***"
 
 #Install homebrew
-if ! command -v brew &> /dev/null
+if ! [ -x "$(command -v brew)" ]
 then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 #Minimal dependencies
-if ! command -v git &> /dev/null
+if ! [ -x "$(command -v git)" ]
 then
   brew install git
 fi
 
-if ! command -v ansible &> /dev/null
+if ! [ -x "$(command -v ansible)" ]
 then
   brew install ansible
 fi
