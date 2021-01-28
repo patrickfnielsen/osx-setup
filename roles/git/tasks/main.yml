@@ -6,3 +6,4 @@
 
     - name: Copy gitconfig
       template: src=gitconfig.j2 dest=~/.gitconfig
+      when: git_global_name | default('', true) | trim != ''
