@@ -49,9 +49,9 @@
         name: zsh
         state: latest
 
-    - name: Install poetry
+    - name: Install pyenv
       homebrew: 
-        name: poetry
+        name: pyenv
         state: latest
 
     - name: Check if ~/.oh-my-zsh exists
