@@ -19,8 +19,16 @@ then
   brew install ansible
 fi
 
-#Git clone the repo
-git clone https://github.com/patrickfnielsen/osx-setup
+#Make sure we have the latest repo
+if [ -d "./osx-setup" ]
+then 
+  #Git pull if the directory exists the repo
+  git -C ./osx-setup pull
+else
+  #Git clone the repo
+  git clone https://github.com/patrickfnielsen/osx-setup
+fi
+
 
 #Fix ansible localhost warning
 export ANSIBLE_LOCALHOST_WARNING=False
