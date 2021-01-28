@@ -49,6 +49,11 @@
         name: zsh
         state: latest
 
+    - name: Install poetry
+      homebrew: 
+        name: poetry
+        state: latest
+
     - name: Check if ~/.oh-my-zsh exists
       register: oh_my_zsh_result
       stat:
