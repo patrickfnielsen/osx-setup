@@ -125,6 +125,7 @@
 
     - name: Install pipenv python package
       pip:
+        executable: pip3
         name: pipenv
 
     - name: Fix mtr owner
