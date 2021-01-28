@@ -42,7 +42,6 @@ plugins=(
   gitignore
   zsh-kubectl-prompt
   zsh-autosuggestions
-  pyenv
 )
 
 
