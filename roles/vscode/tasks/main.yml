@@ -33,6 +33,7 @@
         - ms-python.vscode-pylance
         - ms-python.python
         - octref.vetur
+        - njpwerner.autodocstring
         - gaardsholt.vscode-whatthecommit
     
     - name: Copy settings
