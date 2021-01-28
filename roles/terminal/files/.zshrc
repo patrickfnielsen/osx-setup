@@ -96,3 +96,4 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 export PATH=$HOME/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH="/usr/local/sbin:$PATH"
 export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
