@@ -123,6 +123,10 @@
         name: gettext
         state: linked
 
+    - name: Install pipenv python package
+      pip:
+        name: pipenv
+
     - name: Fix mtr owner
       become: true
       file:
