@@ -42,7 +42,6 @@ plugins=(
   gitignore
   zsh-kubectl-prompt
   zsh-autosuggestions
-  poetry
 )
 
 
@@ -96,5 +95,8 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 
 export PATH=$HOME/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH="/usr/local/sbin:$PATH"
-export PATH="$HOME/.poetry/bin:$PATH"
 export LC_ALL=en_US.UTF-8
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
