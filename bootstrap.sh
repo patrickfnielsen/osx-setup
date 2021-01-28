@@ -3,11 +3,18 @@
 echo "*** Starting device bootstrap ***"
 
 #Install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+if ! command -v brew &> /dev/null
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+fi
 
 #Minimal dependencies
-brew install git
-brew install ansible
+if ! command -v git &> /dev/null
+  brew install git
+fi
+
+if ! command -v ansible &> /dev/null
+  brew install ansible
+fi
 
 #Git clone the repo
 git clone https://github.com/patrickfnielsen/osx-setup
