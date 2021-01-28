@@ -41,8 +41,8 @@ then
   echo Enter your name:
   read gitName
 else
-  export gitEmail=$(git config --global user.email)
-  export gitName=$(git config --global user.name)
+  export gitEmail="$(git config --global user.email)"
+  export gitName="$(git config --global user.name)"
 fi
 
 #Run ansible playbook
