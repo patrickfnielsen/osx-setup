@@ -42,6 +42,7 @@ plugins=(
   gitignore
   zsh-kubectl-prompt
   zsh-autosuggestions
+  poetry
 )
 
 
@@ -76,6 +77,9 @@ RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ssh-remove="ssh-keygen -R"
+alias kc=kubectx
+alias tf=terraform
+
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
@@ -90,9 +94,7 @@ iterm2_print_user_vars() {
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
-alias kc=kubectx
-alias tf=terraform
-export PATH=$HOME/go/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH=$HOME/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.poetry/bin:$PATH"
 export LC_ALL=en_US.UTF-8
