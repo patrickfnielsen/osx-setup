@@ -16,8 +16,8 @@
       osx_defaults:
         domain: com.apple.menuextra.battery
         key: ShowPercent
-        type: bool
-        value: true
+        type: str
+        value: "YES"
         state: present
         
     - name: Enable firewall
