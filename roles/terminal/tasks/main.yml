@@ -77,6 +77,11 @@
         dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
         depth: 1
 
+    - name: "Download pyenv plugin for ohmyzsh"
+      get_url:
+        url: https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/pyenv/pyenv.plugin.zsh
+        dest: ~/.oh-my-zsh/custom/plugins/pyenv
+
     - name: Copy .zshrc
       copy: 
         src: .zshrc
