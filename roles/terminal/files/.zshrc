@@ -96,6 +96,4 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 
 export PATH=$HOME/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH="/usr/local/sbin:$PATH"
-export PATH="$HOME/.pyenv/shims:${PATH}"
-export PYENV_ROOT="$HOME/.pyenv"
 export LC_ALL=en_US.UTF-8
