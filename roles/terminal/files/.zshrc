@@ -93,6 +93,7 @@ iterm2_print_user_vars() {
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
+export PIPENV_VENV_IN_PROJECT=1
 export PATH=$HOME/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH="/usr/local/sbin:$PATH"
 export LC_ALL=en_US.UTF-8
