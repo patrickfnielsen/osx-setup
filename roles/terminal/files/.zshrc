@@ -78,7 +78,7 @@ RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 alias ssh-remove="ssh-keygen -R"
 alias kc=kubectx
 alias tf=terraform
-
+alias chrome=open -a "Google Chrome"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
