@@ -1,5 +1,20 @@
 {
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-    "terminal.integrated.fontFamily": "Meslo LG S DZ for Powerline"
+    "terminal.integrated.fontFamily": "Meslo LG S DZ for Powerline",
+    "python.languageServer": "Pylance",
+    "autoDocstring.docstringFormat": "numpy",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter-notebook",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "git.confirmSync": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "workbench.tree.indent": 15
 }
