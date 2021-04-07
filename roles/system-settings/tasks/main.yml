@@ -21,6 +21,7 @@
         state: present
         
     - name: Enable firewall
+      become: yes
       osx_defaults:
         domain: /Library/Preferences/com.apple.alf
         key: globalstate
