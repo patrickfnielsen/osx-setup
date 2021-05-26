@@ -16,6 +16,12 @@
         src: com.googlecode.iterm2.plist
         dest: $ITERM_PROFILE_PATH/com.googlecode.iterm2.plist
 
+    - name: Copy profiles.json
+      environment: "{{terminal}}"
+      copy: 
+        src: profiles.json
+        dest: "~/Library/Application Support/iTerm2/DynamicProfiles/profiles.json"
+
     - name: "Setup iTerm2 default: PrefsCustomFolder"
       environment: "{{terminal}}"
       osx_defaults:
