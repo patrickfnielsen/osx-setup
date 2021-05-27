@@ -20,7 +20,7 @@
       environment: "{{terminal}}"
       copy: 
         src: profiles.json
-        dest: "~/Library/Application Support/iTerm2/DynamicProfiles/profiles.json"
+        dest: "~/Library/Application\ Support/iTerm2/DynamicProfiles/profiles.json"
 
     - name: "Setup iTerm2 default: PrefsCustomFolder"
       environment: "{{terminal}}"
