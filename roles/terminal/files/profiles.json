@@ -532,7 +532,7 @@
     "Blue Component" : 0.21176470588235294,
     "Green Component" : 0.16862745098039217
   },
-  "Screen" : -1,
+  "Screen" : -2,
   "Initial Use Transparency" : true,
   "HotKey Characters Ignoring Modifiers" : "$",
   "Bound Hosts" : [
