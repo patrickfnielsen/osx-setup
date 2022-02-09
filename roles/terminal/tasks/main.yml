@@ -129,10 +129,14 @@
         name: gettext
         state: linked
 
-    - name: Install pipenv python package
-      pip:
-        executable: pip3
-        name: pipenv
+    - name: Check if ~/.poetry exists
+      register: poetry_result
+      stat:
+        path: ~/.poetry
+
+    - name: Install poetry
+      when: not poetry_result.stat.exists
+      shell: curl -fsSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 
     - name: Fix mtr owner
       become: true
