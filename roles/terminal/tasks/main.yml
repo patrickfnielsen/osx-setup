@@ -33,7 +33,7 @@
         domain: com.googlecode.iterm2.plist
         key: PrefsCustomFolder
         type: string
-        value: "{{$ITERM_PROFILE_PATH}}"
+        value: "{{ITERM_PROFILE_PATH}}"
         state: present
 
     - name: "Setup iTerm2 default: LoadPrefsFromCustomFolder"
