@@ -4,6 +4,9 @@
   vars:
     terminal:
       ITERM_PROFILE_PATH: "{{lookup('env', 'HOME')}}/.iterm"
+  vars_prompt:
+    - name: ansible_become_password
+      prompt: Enter become password
   roles:
     - { role: git, tags: git }
     - { role: applications, tags: applications }
