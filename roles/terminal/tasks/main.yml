@@ -16,6 +16,11 @@
         src: com.googlecode.iterm2.plist
         dest: $ITERM_PROFILE_PATH/com.googlecode.iterm2.plist
 
+    - name: Ensure ~/Library/Application Support/iTerm2/DynamicProfiles exists
+      file: 
+        path: "~/Library/Application\ Support/iTerm2/DynamicProfiles"
+        state: directory
+
     - name: Copy profiles.json
       environment: "{{terminal}}"
       copy: 
