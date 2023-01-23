@@ -95,5 +95,6 @@ source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completi
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
