@@ -146,13 +146,13 @@
     - name: Fix mtr owner
       become: true
       file:
-        path: /usr/local/sbin/mtr-packet
+        path: /opt/homebrew/Cellar/mtr/0.95/sbin/mtr-packet
         owner: root
 
     - name: Fix mtr permissions
       become: true
       file:
-        path: /usr/local/sbin/mtr-packet
+        path: /opt/homebrew/Cellar/mtr/0.95/sbin/mtr-packet
         mode: u+s 
 
     - name: Copy ssh config
