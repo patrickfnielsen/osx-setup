@@ -20,6 +20,14 @@
         value: "YES"
         state: present
         
+    - name: "Enable Dark Mode"
+      osx_defaults:
+        domain: NSGlobalDomain
+        key: AppleInterfaceStyle
+        type: string
+        value: "Dark
+        state: present
+        
     - name: Enable firewall
       become: yes
       osx_defaults:
