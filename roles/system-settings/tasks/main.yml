@@ -25,7 +25,7 @@
         domain: NSGlobalDomain
         key: AppleInterfaceStyle
         type: string
-        value: "Dark
+        value: "Dark"
         state: present
         
     - name: Enable firewall
