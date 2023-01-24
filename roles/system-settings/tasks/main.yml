@@ -2,15 +2,14 @@
     - name:  "Menu Bar: Customise icons show"
       osx_defaults: { domain: 'com.apple.controlcenter', key: "{{ item.key }}", type: "{{ item.type }}", value: "{{ item.value }}" }
       loop:
-        - {key: "NSStatusItem Visible AccessibilityShortcuts", type: bool, value: false }
-        - {key: "NSStatusItem Visible Battery", type: bool, value: true }
-        - {key: "NSStatusItem Visible Bluetooth", type: bool, value: true }
-        - {key: "NSStatusItem Visible Clock", type: bool, value: true }
-        - {key: "NSStatusItem Visible Display", type: bool, value: true }
-        - {key: "NSStatusItem Visible Sound", type: bool, value: true }
-        - {key: "NSStatusItem Visible WiFi", type: bool, value: true }
-        - {key: "NSStatusItem Visible NowPlaying", type: bool, value: true }
-        
+        - {key: "Battery", type: int, value: 18 }
+        - {key: "Bluetooth", type: int, value: 18 }
+        - {key: "Clock", type: int, value: 18 }
+        - {key: "Display", type: int, value: 18 }
+        - {key: "Sound", type: int, value: 18 }
+        - {key: "WiFi", type: int, value: 18 }
+        - {key: "AirPort", type: int, value: 18 }
+
     - name: "Menu Bar: Show Battery Percent"
       osx_defaults:
         domain: com.apple.controlcenter
