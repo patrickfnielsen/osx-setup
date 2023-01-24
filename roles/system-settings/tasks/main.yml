@@ -1,21 +1,20 @@
 ---
-    - name: "Menu Bar: Customise icons show"
-      osx_defaults:
-        domain: com.apple.systemuiserver
-        key: menuExtras
-        type: array
-        value:
-          - "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
-          - "/System/Library/CoreServices/Menu Extras/Volume.menu"
-          - "/System/Library/CoreServices/Menu Extras/Battery.menu"
-          - "/System/Library/CoreServices/Menu Extras/Clock.menu"
-          - "/System/Library/CoreServices/Menu Extras/AirPort.menu"
-        state: present
+    - name:  "Menu Bar: Customise icons show"
+      osx_defaults: { domain: 'com.apple.controlcenter', key: "{{ item.key }}", type: "{{ item.type }}", value: "{{ item.value }}" }
+      loop:
+        - {key: "NSStatusItem Visible AccessibilityShortcuts", type: bool, value: false }
+        - {key: "NSStatusItem Visible Battery", type: bool, value: true }
+        - {key: "NSStatusItem Visible Bluetooth", type: bool, value: true }
+        - {key: "NSStatusItem Visible Clock", type: bool, value: true }
+        - {key: "NSStatusItem Visible Display", type: bool, value: true }
+        - {key: "NSStatusItem Visible Sound", type: bool, value: true }
+        - {key: "NSStatusItem Visible WiFi", type: bool, value: true }
+        - {key: "NSStatusItem Visible NowPlaying", type: bool, value: true }
         
     - name: "Menu Bar: Show Battery Percent"
       osx_defaults:
-        domain: com.apple.menuextra.battery
-        key: ShowPercent
+        domain: com.apple.controlcenter
+        key: BatteryShowPercentage
         type: string
         value: "YES"
         state: present
