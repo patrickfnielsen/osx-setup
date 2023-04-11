@@ -20,11 +20,11 @@
         - eamodio.gitlens
         - EditorConfig.EditorConfig
         - esbenp.prettier-vscode
-        - jmrog.vscode-nuget-package-manager
-        - hashicorp.terraform
+        #- jmrog.vscode-nuget-package-manager
+        #- hashicorp.terraform
         - ms-azuretools.vscode-docker
-        - ms-dotnettools.csharp
-        - nobuhito.printcode
+        #- ms-dotnettools.csharp
+        #- nobuhito.printcode
         - yzhang.markdown-all-in-one
         - visualstudioexptteam.vscodeintellicode
         - patrickfalknielsen.git-tag-push
