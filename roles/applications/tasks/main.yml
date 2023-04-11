@@ -4,33 +4,33 @@
         name: "spotify"
         state: present
 
-    - name: Install 1Password
-      ignore_errors: True
-      homebrew_cask: 
-        name: "1password"
-        state: upgraded
-        greedy: True
+    #- name: Install 1Password
+    #  ignore_errors: True
+    #  homebrew_cask: 
+    #    name: "1password"
+    #    state: upgraded
+    #    greedy: True
 
-    - name: Install Wireshark
-      homebrew_cask: 
-        name: "wireshark"
-        state: present
-        sudo_password: "{{ ansible_become_pass }}"
+    #- name: Install Wireshark
+    #  homebrew_cask: 
+    #    name: "wireshark"
+    #    state: present
+    #    sudo_password: "{{ ansible_become_pass }}"
 
     - name: Install Sublime Text
       homebrew_cask: 
         name: "sublime-text"
         state: present
 
-    - name: Install Docker
-      homebrew_cask: 
-        name: "docker"
-        state: present
+    #- name: Install Docker
+    #  homebrew_cask: 
+    #    name: "docker"
+    #    state: present
 
-    - name: Install google-cloud-sdk
-      homebrew_cask: 
-        name: "google-cloud-sdk"
-        state: present
+    #- name: Install google-cloud-sdk
+    #  homebrew_cask: 
+    #    name: "google-cloud-sdk"
+    #    state: present
 
     - name: Install Insomnia
       homebrew_cask: 
@@ -42,10 +42,10 @@
         name: "google-chrome"
         state: present
 
-    - name: Install dotnet sdk
-      homebrew_cask: 
-        name: "dotnet-sdk"
-        state: present
+    #- name: Install dotnet sdk
+    #  homebrew_cask: 
+    #    name: "dotnet-sdk"
+    #    state: present
 
     - name: Install rectangle
       homebrew_cask: 
