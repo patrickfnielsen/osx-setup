@@ -22,16 +22,6 @@
         name: "sublime-text"
         state: present
 
-    - name: Install podman desktop
-      homebrew_cask:
-        name: "podman-desktop"
-        state: present
-
-    #- name: Install Docker
-    #  homebrew_cask: 
-    #    name: "docker"
-    #    state: present
-
     #- name: Install google-cloud-sdk
     #  homebrew_cask: 
     #    name: "google-cloud-sdk"
