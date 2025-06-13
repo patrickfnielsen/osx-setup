@@ -125,7 +125,11 @@
           "stern", 
           "circleci", 
           "ipcalc", 
-          "mtr"
+          "mtr",
+          "docker",
+          "docker-compose",
+          "docker-credential-helper",
+          "colima"
         ]
         state: latest
 
